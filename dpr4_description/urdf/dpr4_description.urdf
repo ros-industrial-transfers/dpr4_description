@@ -1,0 +1,43 @@
+<robot
+  name="dpr4_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.114682538166598 -19.4043645190815 -0.164359636146686"
+        rpy="0 0 0" />
+      <mass
+        value="11.8469258135502" />
+      <inertia
+        ixx="0.214998170977311"
+        ixy="-0.00249889578392729"
+        ixz="-0.00224717739285468"
+        iyy="0.189502411392829"
+        iyz="0.000280923420379616"
+        izz="0.387695107352547" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dpr4_description/meshes/base_link.stl" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.592156862745098 0.619607843137255 0.650980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://dpr4_description/meshes/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
