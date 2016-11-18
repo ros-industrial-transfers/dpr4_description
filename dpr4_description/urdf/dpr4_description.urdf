@@ -41,7 +41,7 @@
     </collision>
   </link>
   <link
-    name="AandrijfwielLinks">
+    name="front_wheel_left">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/front_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -76,12 +76,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/front_wheel.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="AandrijfwielJointLinks"
+    name="front_wheel_left_joint"
     type="continuous">
     <origin
       xyz="-0.272 0.084 0.145"
@@ -89,12 +89,12 @@
     <parent
       link="base_link" />
     <child
-      link="AandrijfwielLinks" />
+      link="front_wheel_left" />
     <axis
       xyz="-1 0 0" />
   </joint>
   <link
-    name="AandrijfwielRechts">
+    name="front_wheel_right">
    <inertial>
       <origin
         xyz="0 0 0"
@@ -115,7 +115,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/front_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -129,12 +129,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/front_wheel.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="AandrijfwielJointRechts"
+    name="front_wheel_right_joint"
     type="continuous">
     <origin
       xyz="0.272 0.084 0.145"
@@ -142,12 +142,12 @@
     <parent
       link="base_link" />
     <child
-      link="AandrijfwielRechts" />
+      link="front_wheel_right" />
     <axis
       xyz="-1 0 0" />
   </joint>
   <link
-    name="PassiefLinkLinks">
+    name="yoke_left">
     <inertial>
       <origin
         xyz="0 0.01701 -0.04258"
@@ -168,7 +168,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/yoke.stl" />
       </geometry>
       <material
         name="">
@@ -182,12 +182,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/yoke.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="PassiefJointLinks"
+    name="yoke_left_joint"
     type="continuous">
     <origin
       xyz="-0.183 0.532 0.182"
@@ -195,12 +195,12 @@
     <parent
       link="base_link" />
     <child
-      link="PassiefLinkLinks" />
+      link="yoke_left" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="ZwenkwielLinks">
+    name="back_wheel_left">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -221,7 +221,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/back_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -235,25 +235,25 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/back_wheel.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="ZwenkwielJointLinks"
+    name="back_wheel_left_joint"
     type="continuous">
     <origin
       xyz="0 0.04025 -0.105"
       rpy="0 0 0" />
     <parent
-      link="PassiefLinkLinks" />
+      link="yoke_left" />
     <child
-      link="ZwenkwielLinks" />
+      link="back_wheel_left" />
     <axis
       xyz="-1 0 0" />
   </joint>
   <link
-    name="PassiefLinkRechts">
+    name="yoke_right">
     <inertial>
       <origin
         xyz="0 0.01701 -0.04258"
@@ -274,7 +274,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/yoke.stl" />
       </geometry>
       <material
         name="">
@@ -288,12 +288,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/yoke.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="PassiefJointRechts"
+    name="yoke_right_joint"
     type="continuous">
     <origin
       xyz="0.183 0.532 0.182"
@@ -301,12 +301,12 @@
     <parent
       link="base_link" />
     <child
-      link="PassiefLinkRechts" />
+      link="yoke_right" />
     <axis
       xyz="0 0 1" />
   </joint>
   <link
-    name="ZwenkwielRechts">
+    name="back_wheel_right">
     <inertial>
       <origin
         xyz="0 0 0"
@@ -327,7 +327,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/back_wheel.stl" />
       </geometry>
       <material
         name="">
@@ -341,20 +341,20 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/back_wheel.stl" />
       </geometry>
     </collision>
   </link>
   <joint
-    name="ZwenkwielJointRechts"
+    name="back_wheel_right_joint"
     type="continuous">
     <origin
       xyz="0 0.04025 -0.105"
       rpy="0 0 0" />
     <parent
-      link="PassiefLinkRechts" />
+      link="yoke_right" />
     <child
-      link="ZwenkwielRechts" />
+      link="back_wheel_right" />
     <axis
       xyz="-1 0 0" />
   </joint>
