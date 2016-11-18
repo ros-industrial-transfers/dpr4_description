@@ -1,6 +1,0 @@
-<package>
-  <description brief="dpr4_description">dpr4_description</description>
-  <depend package="gazebo" />
-  <author>me</author>
-  <license>BSD</license>
-</package>
