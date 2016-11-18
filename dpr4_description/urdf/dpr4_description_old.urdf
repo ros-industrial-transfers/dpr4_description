@@ -4,17 +4,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.213627063293252 0.0526066015920107 0.108028639270564"
         rpy="0 0 0" />
       <mass
-        value="12.0" />
+        value="11.846925821453" />
       <inertia
-        ixx="1.3016130000000000"
-        ixy="-0.0069080000000000"
-        ixz="-0.0013120000000000"
-        iyy="0.4731200000000000"
-        iyz="0.4749580000000000"
-        izz="1.2564970000000000" />
+        ixx="0.215224712664857"
+        ixy="-0.00260073216326496"
+        ixz="-0.00224470250436654"
+        iyy="0.189528460870013"
+        iyz="0.000283047501022847"
+        izz="0.387947698500775" />
     </inertial>
     <visual>
       <origin
@@ -22,7 +22,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/base_link.stl" />
+          filename="package://dpr4_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -36,7 +36,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/base_link.stl" />
+          filename="package://dpr4_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -44,17 +44,17 @@
     name="AandrijfwielLinks">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.048307723482591 -0.0956757854798777 0.034879921431437"
         rpy="0 0 0" />
       <mass
         value="1.98850951394841" />
       <inertia
-        ixx="0.0254040000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0130220000000000"
-        iyz="0.0000000000000000"
-        izz="0.0130220000000000" />
+        ixx="0.0252611398228521"
+        ixy="0.00120836004966569"
+        ixz="-0.00133091543057524"
+        iyy="0.0132060652824576"
+        iyz="-0.000132092231656589"
+        izz="0.0132316258981368" />
     </inertial>
     <visual>
       <origin
@@ -62,7 +62,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/AandrijfwielLinks.STL" />
       </geometry>
       <material
         name="">
@@ -76,7 +76,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/AandrijfwielLinks.STL" />
       </geometry>
     </collision>
   </link>
@@ -84,8 +84,8 @@
     name="AandrijfwielJointLinks"
     type="continuous">
     <origin
-      xyz="-0.272 0.084 0.145"
-      rpy="0 0 0" />
+      xyz="-0.0282464240706431 -0.268065095057138 0.156065936359952"
+      rpy="0.833624618439072 1.33733009515224E-15 1.42420629036135" />
     <parent
       link="base_link" />
     <child
@@ -95,19 +95,19 @@
   </joint>
   <link
     name="AandrijfwielRechts">
-   <inertial>
+    <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.0940661148510732 -0.0481497557449084 0.00366077812370196"
         rpy="0 0 0" />
       <mass
         value="1.98850951394841" />
       <inertia
-        ixx="0.0254040000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0130220000000000"
-        iyz="0.0000000000000000"
-        izz="0.0130220000000000" />
+        ixx="0.0252611398166548"
+        ixy="0.000210548957505752"
+        ixz="-0.00178525602873076"
+        iyy="0.013089777583101"
+        iyz="-3.08732671676455E-05"
+        izz="0.0133479136036906" />
     </inertial>
     <visual>
       <origin
@@ -115,7 +115,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/AandrijfwielRechts.STL" />
       </geometry>
       <material
         name="">
@@ -129,7 +129,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Aandrijfwiel.stl" />
+          filename="package://dpr4_description/meshes/AandrijfwielRechts.STL" />
       </geometry>
     </collision>
   </link>
@@ -137,8 +137,8 @@
     name="AandrijfwielJointRechts"
     type="continuous">
     <origin
-      xyz="0.272 0.084 0.145"
-      rpy="0 0 0" />
+      xyz="0.0450645120366924 0.228456132827706 0.156065936359953"
+      rpy="1.45340093763758 2.27107070527088E-16 1.42420629036135" />
     <parent
       link="base_link" />
     <child
@@ -150,17 +150,17 @@
     name="PassiefLinkLinks">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.0837221248460882 0.0344894913205067 -0.140479015992092"
         rpy="0 0 0" />
       <mass
         value="0.027578120885064" />
       <inertia
-        ixx="0.0000770000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0000750000000000"
-        iyz="-0.0000250000000000"
-        izz="0.0000260000000000" />
+        ixx="4.49175970273181E-05"
+        ixy="1.2307576219032E-05"
+        ixz="-4.15758518250327E-07"
+        iyy="2.08578618373714E-05"
+        iyz="-1.81720313887334E-06"
+        izz="4.21631289093414E-05" />
     </inertial>
     <visual>
       <origin
@@ -168,7 +168,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/PassiefLinkLinks.STL" />
       </geometry>
       <material
         name="">
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/PassiefLinkLinks.STL" />
       </geometry>
     </collision>
   </link>
@@ -190,8 +190,8 @@
     name="PassiefJointLinks"
     type="continuous">
     <origin
-      xyz="-0.183 0.532 0.182"
-      rpy="0 0 0" />
+      xyz="0.426071935947264 -0.258167122222898 0.0780659363599518"
+      rpy="1.5707963267949 -8.97790964757775E-18 -0.147155764293911" />
     <parent
       link="base_link" />
     <child
@@ -203,17 +203,17 @@
     name="ZwenkwielLinks">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.144887870932963 0.0823759963906841 -0.0184273399720342"
         rpy="0 0 0" />
       <mass
         value="0.2926460297435" />
       <inertia
-        ixx="0.0009700000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0005000000000000"
-        iyz="0.0000000000000000"
-        izz="0.0005000000000000" />
+        ixx="0.000968641461773369"
+        ixy="-4.71388192981209E-05"
+        ixz="5.01321333937055E-05"
+        iyy="0.000507348512867715"
+        iyz="-5.0704513867776E-06"
+        izz="0.000507972934894044" />
     </inertial>
     <visual>
       <origin
@@ -221,7 +221,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/ZwenkwielLinks.STL" />
       </geometry>
       <material
         name="">
@@ -235,7 +235,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/ZwenkwielLinks.STL" />
       </geometry>
     </collision>
   </link>
@@ -243,8 +243,8 @@
     name="ZwenkwielJointLinks"
     type="continuous">
     <origin
-      xyz="0 0.04025 -0.105"
-      rpy="0 0 0" />
+      xyz="0.0402530425707102 0.0100000000000001 0"
+      rpy="1.57759894294971 1.57079630572147 -0.799615214926937" />
     <parent
       link="PassiefLinkLinks" />
     <child
@@ -256,17 +256,17 @@
     name="PassiefLinkRechts">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.0296839515797069 0.0344894913205067 -0.136595027102795"
         rpy="0 0 0" />
       <mass
         value="0.0275781208850642" />
       <inertia
-        ixx="0.0000770000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0000750000000000"
-        iyz="-0.0000250000000000"
-        izz="0.0000260000000000" />
+        ixx="4.49175970273183E-05"
+        ixy="1.23075762190321E-05"
+        ixz="-4.15758518250319E-07"
+        iyy="2.08578618373715E-05"
+        iyz="-1.81720313887329E-06"
+        izz="4.21631289093417E-05" />
     </inertial>
     <visual>
       <origin
@@ -274,7 +274,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/PassiefLinkRechts.STL" />
       </geometry>
       <material
         name="">
@@ -288,7 +288,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/PassiefLink.stl" />
+          filename="package://dpr4_description/meshes/PassiefLinkRechts.STL" />
       </geometry>
     </collision>
   </link>
@@ -296,8 +296,8 @@
     name="PassiefJointRechts"
     type="continuous">
     <origin
-      xyz="0.183 0.532 0.182"
-      rpy="0 0 0" />
+      xyz="0.479531944388918 0.103907493702353 0.0780659363599517"
+      rpy="1.5707963267949 -9.23902259508227E-18 -0.151468187968226" />
     <parent
       link="base_link" />
     <child
@@ -309,17 +309,17 @@
     name="ZwenkwielRechts">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0.140014607917044 -0.0048898069137992 0.0497659421938803"
         rpy="0 0 0" />
       <mass
         value="0.29264656535805" />
       <inertia
-        ixx="0.0009700000000000"
-        ixy="0.0000000000000000"
-        ixz="0.0000000000000000"
-        iyy="0.0005000000000000"
-        iyz="0.0000000000000000"
-        izz="0.0005000000000000" />
+        ixx="0.000968641729498815"
+        ixy="-6.27531081530752E-05"
+        ixz="-2.82373164212915E-05"
+        iyy="0.000511030196054125"
+        iyz="3.80204158394628E-06"
+        izz="0.000504291576128644" />
     </inertial>
     <visual>
       <origin
@@ -327,7 +327,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/ZwenkwielRechts.STL" />
       </geometry>
       <material
         name="">
@@ -341,7 +341,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://dpr4_description/meshes/Zwenkwiel.stl" />
+          filename="package://dpr4_description/meshes/ZwenkwielRechts.STL" />
       </geometry>
     </collision>
   </link>
@@ -349,8 +349,8 @@
     name="ZwenkwielJointRechts"
     type="continuous">
     <origin
-      xyz="0 0.04025 -0.105"
-      rpy="0 0 0" />
+      xyz="0.0402530425707104 0.0100000000000002 0"
+      rpy="0.788698481447936 1.57079631189374 -0.363147009946176" />
     <parent
       link="PassiefLinkRechts" />
     <child
