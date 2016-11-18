@@ -4,17 +4,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="0 0.23146 0.14798"
         rpy="0 0 0" />
       <mass
         value="12.0" />
       <inertia
-        ixx="1.3016130000000000"
-        ixy="-0.0069080000000000"
-        ixz="-0.0013120000000000"
-        iyy="0.4731200000000000"
-        iyz="0.4749580000000000"
-        izz="1.2564970000000000" />
+        ixx="0.36685543"
+        ixy="-0.00104218"
+        ixz="-0.00036965"
+        iyy="0.13334723"
+        iyz="0.13386521"
+        izz="0.35413958" />
     </inertial>
     <visual>
       <origin
@@ -197,7 +197,7 @@
     <child
       link="PassiefLinkLinks" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="ZwenkwielLinks">
@@ -303,7 +303,7 @@
     <child
       link="PassiefLinkRechts" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="ZwenkwielRechts">
