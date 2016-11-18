@@ -1,6 +1,28 @@
 <robot
   name="dpr4_description">
-  <link
+  <gazebo reference="front_wheel_left">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <gazebo reference="front_wheel_right">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <gazebo reference="yoke_left">
+    <material>Gazebo/FlatBlack</material>
+  </gazebo>
+  <gazebo reference="yoke_right">
+    <material>Gazebo/FlatBlack</material>
+  </gazebo>
+  <gazebo reference="back_wheel_right">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="back_wheel_left">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+  <gazebo reference="base_link">
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+    <link
     name="base_link">
     <inertial>
       <origin
@@ -66,8 +88,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.294117647058824 0.294117647058824 0.294117647058824 1" />
+        Gazebo/Blue
       </material>
     </visual>
     <collision>
