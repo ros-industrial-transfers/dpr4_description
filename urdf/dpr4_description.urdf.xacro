@@ -30,7 +30,7 @@
     <inertial>
       <origin xyz="0 0.23146 0.14798" rpy="0 0 0" />
       <mass value="12.0" />
-      <inertia ixx="1.30161345" ixy="-0.00690756" ixz="-0.00131153" iyy="0.47311975" iyz="0.47495754" izz="1.25649724" />
+      <inertia ixx="0.3625" ixy="0" ixz="0" iyy="0.1625" iyz="0" izz="0.52" />
     </inertial>
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
