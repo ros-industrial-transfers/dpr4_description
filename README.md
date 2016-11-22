@@ -1,21 +1,38 @@
-# dpr4_description
+#dpr4_description
 Unified Robot Description Format (URDF) of the DPR4 platform for the TU Delft Minor Robotics
 
-Installation
-================
+##Installation
+
 
 Move to the src folder of you workspace
 ````
 $ cd ~/<YOUR_WORKSPACE_PATH>/src/
 ````
 
+
 Clone the repo into the src folder
 
 ````
 $ git clone https://github.com/yappel/dpr4_description.git
 ````
-Usage
-===============
+##Usage
+
+###View the base
+Build your catkin workspace:
+````
+$ cd ~/<YOUR_WORKSPACE_PATH>/
+$ catkin_make && source devel/setup.bash
+````
+Launch gazebo.launch to view the base in gazebo:
+````
+$ roslaunch dpr4_description gazebo.launch
+````
+Launch display.laucnh to view the base in gazebo and RVIZ:
+````
+$ roslaunch dpr4_description display.launch
+````
+
+###Add the base to your own robot
 Create your own ros package for your robot (if you do not have one already)
 
 ````
@@ -51,4 +68,4 @@ The file might look something like this:
 </robot>
 
 ````
-You now have an URDF ready to use. You can use this for multiple things, for example to view your robot in RVIZ as described [here] (http://wiki.ros.org/rviz/DisplayTypes/RobotModel)
+You now have an URDF ready to use. You can use this file for various things, for example to view your robot in RVIZ as described [here] (http://wiki.ros.org/rviz/DisplayTypes/RobotModel)
