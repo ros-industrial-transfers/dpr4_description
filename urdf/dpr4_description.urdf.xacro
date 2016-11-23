@@ -35,7 +35,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/base_link.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/base_link.stl" />
       </geometry>
       <material name="">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -44,7 +44,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/base_link.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/base_link.stl" />
       </geometry>
     </collision>
   </link>
@@ -58,13 +58,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/front_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/front_wheel.stl" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/front_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/front_wheel.stl" />
       </geometry>
     </collision>
   </link>
@@ -78,7 +78,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/front_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/front_wheel.stl" />
       </geometry>
       <material name="">
         <color rgba="0.294117647058824 0.294117647058824 0.294117647058824 1" />
@@ -87,7 +87,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/front_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/front_wheel.stl" />
       </geometry>
     </collision>
   </link>
@@ -101,7 +101,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/yoke.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/yoke.stl" />
       </geometry>
       <material name="">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -110,7 +110,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/yoke.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/yoke.stl" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/yoke.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/yoke.stl" />
       </geometry>
       <material name="">
         <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -133,7 +133,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/yoke.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/yoke.stl" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/back_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/back_wheel.stl" />
       </geometry>
       <material name="">
         <color rgba="0.294117647058824 0.294117647058824 0.294117647058824 1" />
@@ -156,7 +156,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/back_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/back_wheel.stl" />
       </geometry>
     </collision>
   </link>
@@ -170,7 +170,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/back_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/visual/back_wheel.stl" />
       </geometry>
       <material name="">
         <color rgba="0.294117647058824 0.294117647058824 0.294117647058824 1" />
@@ -179,7 +179,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://dpr4_description/meshes/back_wheel.stl" />
+        <mesh filename="package://dpr4_description/meshes/collision/back_wheel.stl" />
       </geometry>
     </collision>
   </link>
