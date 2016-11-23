@@ -5,6 +5,6 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
     <param name="use_gui" value="true" />
   </node>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find dpr4_description)/show.rviz" required="true" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find dpr4_description)/config/show.rviz" required="true" />
 </launch>
 
