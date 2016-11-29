@@ -31,6 +31,10 @@ Launch display.laucnh to view the base in gazebo and RVIZ:
 ````
 $ roslaunch dpr4_description display.launch
 ````
+Launch show.laucnh to view the base in RVIZ:
+````
+$ roslaunch dpr4_description show.launch
+````
 
 ###Add the base to your own robot
 Create your own ros package for your robot (if you do not have one already)
@@ -45,6 +49,7 @@ The file might look something like this:
 <?xml version="1.0"?>
 <robot name="MY_ROBOT" xmlns:xacro="http://ros.org/wiki/xacro">
    <xacro:include filename="$(find dpr4_description)/urdf/dpr4_description.urdf.xacro"/>
+   <xacro:dpr4 name="base_link"/>
 
   <link name="example_link">
     <visual>
