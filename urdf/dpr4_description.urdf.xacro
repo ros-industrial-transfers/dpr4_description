@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot name="dpr4_description" xmlns:xacro="http://ros.org/wiki/xacro">
-
+<xacro:macro name="dpr4" params="name">
   <xacro:include filename="$(find dpr4_description)/urdf/front_wheel.urdf.xacro" />
   <xacro:include filename="$(find dpr4_description)/urdf/back_wheel.urdf.xacro" />
   <xacro:include filename="$(find dpr4_description)/urdf/yoke.urdf.xacro"/>
@@ -30,7 +30,7 @@
 
   <!-- Links -->
   <!-- Main part of the base. -->
-  <link name="base_link">
+  <link name="${name}">
     <inertial>
       <origin xyz="0 0.23146 0.14798" rpy="0 0 0" />
       <mass value="12.0" />
@@ -62,5 +62,5 @@
   <xacro:back_wheel parent="yoke_left_link" name="back_wheel_left" x_loc="0" y_loc="0.04025" z_loc="-0.105"/>
   <xacro:back_wheel parent="yoke_right_link" name="back_wheel_right" x_loc="0" y_loc="0.04025" z_loc="-0.105"/>
 
-  <!-- The joints -->
+</xacro:macro>
 </robot>
