@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot name="dpr4_yoke" xmlns:xacro="http://ros.org/wiki/xacro">
+<xacro:macro name="yoke" params="parent name x_loc y_loc z_loc">
+<joint name="${name}_link" type="continuous">
+  <origin xyz="${x_loc} ${y_loc} ${z_loc}" rpy="0 0 0" />
+  <parent link="${parent}" />
+  <child link="${name}_link" />
+  <axis xyz="0 0 1" />
+</joint>
+<link name="${name}_link">
+  <inertial>
+    <origin xyz="0 0.01701 -0.04258" rpy="0 0 0" />
+    <mass value="0.0275781208850642" />
+    <inertia ixx="0.0000770000000000" ixy="0.0000000000000000" ixz="0.0000000000000000" iyy="0.0000750000000000" iyz="-0.000000000000000" izz="0.0000260000000000" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://dpr4_description/meshes/visual/yoke.stl" />
+    </geometry>
+    <material name="">
+      <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+    </material>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://dpr4_description/meshes/collision/yoke.stl" />
+    </geometry>
+  </collision>
+</link>
+</xacro:macro>
+</robot>

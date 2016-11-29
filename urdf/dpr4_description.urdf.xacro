@@ -2,8 +2,8 @@
 <robot name="dpr4_description" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <xacro:include filename="$(find dpr4_description)/urdf/front_wheel.urdf.xacro" />
-  <!-- <xacro:include filename="$(find dpr4_description)/urdf/back_wheel.urdf.xacro" />
-  <xacro:include filename="$(find dpr4_description)/urdf/yokes.urdf.xacro"/> -->
+  <!-- <xacro:include filename="$(find dpr4_description)/urdf/back_wheel.urdf.xacro" /> -->
+  <xacro:include filename="$(find dpr4_description)/urdf/yoke.urdf.xacro"/>
 
   <!-- Colors -->
   <gazebo reference="front_wheel_left">
@@ -52,56 +52,13 @@
       </geometry>
     </collision>
   </link>
-  <!-- The big wheel on front, used to move the robot -->
+  <!-- The big wheels on front, used to move the robot -->
   <xacro:front_wheel parent="base_link" name="front_wheel_left" x_loc="-0.272" y_loc="0.084" z_loc="0.145"/>
   <xacro:front_wheel parent="base_link" name="front_wheel_right" x_loc="0.272" y_loc="0.084" z_loc="0.145"/>
-  <!-- The part connecting the back wheel to the base -->
-  <link name="yoke_left">
-    <inertial>
-      <origin xyz="0 0.01701 -0.04258" rpy="0 0 0" />
-      <mass value="0.027578120885064" />
-      <inertia ixx="0.0000770000000000" ixy="0.0000000000000000" ixz="0.0000000000000000" iyy="0.0000750000000000" iyz="-0.000000000000000" izz="0.0000260000000000" />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://dpr4_description/meshes/visual/yoke.stl" />
-      </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://dpr4_description/meshes/collision/yoke.stl" />
-      </geometry>
-    </collision>
-  </link>
-  <!-- The part connecting the back wheel to the base -->
-  <link name="yoke_right">
-    <inertial>
-      <origin xyz="0 0.01701 -0.04258" rpy="0 0 0" />
-      <mass value="0.0275781208850642" />
-      <inertia ixx="0.0000770000000000" ixy="0.0000000000000000" ixz="0.0000000000000000" iyy="0.0000750000000000" iyz="-0.000000000000000" izz="0.0000260000000000" />
-    </inertial>
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://dpr4_description/meshes/visual/yoke.stl" />
-      </geometry>
-      <material name="">
-        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://dpr4_description/meshes/collision/yoke.stl" />
-      </geometry>
-    </collision>
-  </link>
-  <!-- The small wheel on the back -->
+  <!-- The parts connecting the back wheel to the base -->
+  <xacro:yoke parent="base_link" name="yoke_left" x_loc="-0.183" y_loc="0.532" z_loc="0.182"/>
+  <xacro:yoke parent="base_link" name="yoke_right" x_loc="0.183" y_loc="0.532" z_loc="0.182"/>
+  <!-- The small wheels on the back -->
   <link name="back_wheel_left">
     <inertial>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -149,27 +106,15 @@
   </link>
 
   <!-- The joints -->
-  <joint name="yoke_left_joint" type="continuous">
-    <origin xyz="-0.183 0.532 0.182" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="yoke_left" />
-    <axis xyz="0 0 1" />
-  </joint>
-  <joint name="yoke_right_joint" type="continuous">
-    <origin xyz="0.183 0.532 0.182" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="yoke_right" />
-    <axis xyz="0 0 1" />
-  </joint>
   <joint name="back_wheel_left_joint" type="continuous">
     <origin xyz="0 0.04025 -0.105" rpy="0 0 0" />
-    <parent link="yoke_left" />
+    <parent link="yoke_left_link" />
     <child link="back_wheel_left" />
     <axis xyz="-1 0 0" />
   </joint>
   <joint name="back_wheel_right_joint" type="continuous">
     <origin xyz="0 0.04025 -0.105" rpy="0 0 0" />
-    <parent link="yoke_right" />
+    <parent link="yoke_right_link" />
     <child link="back_wheel_right" />
     <axis xyz="-1 0 0" />
   </joint>
