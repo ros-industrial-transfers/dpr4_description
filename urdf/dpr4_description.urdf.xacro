@@ -6,22 +6,22 @@
   <xacro:include filename="$(find dpr4_description)/urdf/yoke.urdf.xacro"/>
 
   <!-- Colors -->
-  <gazebo reference="front_wheel_left">
+  <gazebo reference="front_wheel_left_link">
     <material>Gazebo/DarkGrey</material>
   </gazebo>
-  <gazebo reference="front_wheel_right">
+  <gazebo reference="front_wheel_right_link">
     <material>Gazebo/DarkGrey</material>
   </gazebo>
-  <gazebo reference="yoke_left">
+  <gazebo reference="yoke_left_link">
     <material>Gazebo/FlatBlack</material>
   </gazebo>
-  <gazebo reference="yoke_right">
+  <gazebo reference="yoke_right_link">
     <material>Gazebo/FlatBlack</material>
   </gazebo>
-  <gazebo reference="back_wheel_right">
+  <gazebo reference="back_wheel_right_link">
     <material>Gazebo/Grey</material>
   </gazebo>
-  <gazebo reference="back_wheel_left">
+  <gazebo reference="back_wheel_left_link">
     <material>Gazebo/Grey</material>
   </gazebo>
   <gazebo reference="base_link">
