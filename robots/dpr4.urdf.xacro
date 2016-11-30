@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<robot name="dpr4" xmlns:xacro="http://ros.org/wiki/xacro">
+   <xacro:include filename="$(find dpr4_description)/urdf/dpr4_description.urdf.xacro"/>
+   <xacro:dpr4 name="base_link"/>
+</robot>
