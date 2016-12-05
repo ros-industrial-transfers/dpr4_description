@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <robot name="dpr4_yoke" xmlns:xacro="http://ros.org/wiki/xacro">
-<xacro:macro name="yoke" params="parent name x_loc y_loc z_loc">
+<xacro:macro name="yoke" params="parent name *joint_origin">
 <joint name="${name}_link" type="continuous">
-  <origin xyz="${x_loc} ${y_loc} ${z_loc}" rpy="0 0 0" />
+  <xacro:insert_block name="joint_origin" />
   <parent link="${parent}" />
   <child link="${name}_link" />
   <axis xyz="0 0 1" />
